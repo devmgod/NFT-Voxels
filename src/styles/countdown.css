@@ -1,0 +1,16 @@
+.Countdown {
+  color: white;
+  display: flex;
+}
+
+.Countdown-col {
+  font-size: 32px;
+  margin: 0 1px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Countdown {
+    justify-content: center;
+    margin-top: 0px;
+  }
+}

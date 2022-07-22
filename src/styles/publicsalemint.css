@@ -1,0 +1,20 @@
+.line {
+  width: 220px;
+  border: 1px white solid;
+  margin-top: 50px;
+}
+
+.publicsalemint {
+  margin: 82px 60px;
+}
+
+.publicsalemint .cube {
+  position: inherit;
+  transform: none;
+}
+
+@media (max-width: 1024px) {
+  .publicsalemint {
+    padding: 150px 0 0 0;
+  }
+}

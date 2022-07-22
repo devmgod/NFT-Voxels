@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  /* width: 100%; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(./img/stillbackground.png);
+
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#video {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+@font-face {
+  font-family: "Kasumi";
+  src: local("Kasumi"), url(./fonts/Kasumi_Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Agency";
+  src: local("Agency"), url(./fonts/Agency.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AgencyR";
+  src: local("AgencyR"), url(./fonts/AgencyR.ttf.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "AgencyB";
+  src: local("AgencyB"), url(./fonts/AgencyB.ttf.TTF) format("truetype");
+}
+
+.kasumi {
+  font-family: "Kasumi";
+}
+
+.agency {
+  font-family: "Agency";
+}
+
+.agencyr {
+  font-family: "AgencyR";
+}
+
+.agencyb {
+  font-family: "AgencyB";
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.center {
+  justify-content: center;
+}
+
+.img-size {
+  width: 20%;
+}
+
+@media (max-width: 1024px) {
+  .img-size {
+    width: 30%;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background: url(./img/stillbackgroundmobile.png);
+    background-size: cover;
+    height: 100vh;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    height: 100vh;
+  }
+
+  .cube {
+    margin-left: 10px;
+  }
+
+  footer a {
+    text-align: center;
+  }
+
+  .img-size {
+    width: 50%;
+  }
+}
